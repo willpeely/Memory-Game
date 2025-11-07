@@ -1,0 +1,65 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+#gameContainer {
+  display: flex;
+  flex-direction: column; /* Stack grid and button vertically */
+  align-items: center;    /* Center horizontally */
+  gap: 20px;              /* Space between grid and button */
+}
+
+#buttonGrid {
+  display: grid;
+  gap: 6px;
+  width: 45vw;
+  height: 80vh;
+}
+
+#playButton, #guessButton {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#playButton:hover, #guessButton:hover {
+  background-color: #45a049;
+}
+
+#playButton:disabled, #guessButton:disabled {
+  background-color: #9E9E9E;
+  cursor: auto;
+}
+
+#guessInput {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  width: 100px;
+}
+
+#streakDisplay {
+  padding: 12px 5px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 125px;
+  cursor: default;
+}
+
+

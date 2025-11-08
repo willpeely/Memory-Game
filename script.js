@@ -48,11 +48,11 @@ function setupGuessButton()
         
         if (playerGuess === sequenceCount) {
             streak++;
-            if(streak === 10){
+            if(streak === 3){
                 size++;
                 setGridSize(size);
             }
-            else if(streak === 20){
+            else if(streak === 6){
                 size++;
                 setGridSize(size);
             }
